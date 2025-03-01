@@ -14,15 +14,18 @@ const Search = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <div className="flex gap-3 items-center">
-          <img src={assets.mic_icon} alt="" className="cursor-pointer w-6" />
+        <div
+          className="flex gap-3 items-center"
+          onClick={() => {
+            onSent();
+          }}
+        >
+          {/* <img src={assets.mic_icon} alt="" className="cursor-pointer w-6" /> */}
+          <p className="">Send</p>
           <img
             src={assets.send_icon}
             alt="send"
             className="cursor-pointer w-6"
-            onClick={() => {
-              onSent();
-            }}
           />
         </div>
       </div>
