@@ -4,7 +4,7 @@ import Search from '../components/Search'
 
 const Home = () => {
   return (
-    <div className=''>
+    <div className='flex flex-col items-center'>
         <Chat/>
         <Search/>
     </div>
